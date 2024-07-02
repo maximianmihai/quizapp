@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Quiz App</title>
+</head>
+<body>
+    <div id="timer">Time Remaining: <span id="time">120</span> seconds</div>
+    <div id="questionCounter">Question: 1 / 10</div>
+    <section id="Content">
+        <div id="ContentWrapper">
+            <h2></h2> 
+            <div id="optionsContainer">
+                <div class="option" id="option1"></div>
+                <div class="option" id="option2"></div>
+                <div class="option" id="option3"></div>
+                <div class="option" id="option4"></div>
+            </div>
+            <div id="SubmitButton">
+                <button class="btn" type="button">Submit</button>
+            </div>
+            <div id="ShowScore" class="ScoreArea" style="display:none;"></div>
+        
+    </section>
+    <script>
+        function submitButtonHandler() {
+            const selectedOption = document.querySelector('input[type="radio"]:checked');
+            if (!selectedOption) {
+                alert('Please select an option!');
+                return;
+            }
+        }
+    </script>
+</body>
+</html>

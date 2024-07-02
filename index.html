@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Category Selection</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div id="category-selection">
+        <h1>Quiz</h1>
+        <p>Selecteaza o categorie:</p>
+        <form id="categoryForm">
+            <select id="categorySelect">
+                <option value="0">Alege o categorie</option>
+                <option value="9">Cunostinte generale</option>
+                <option value="10">Carti</option>
+                <option value="11">Filme</option>
+                <option value="12">Muzica</option>
+                <option value="13">Muzicale si Teatru</option>
+                <option value="14">Televiziune</option>
+                <option value="15">Jocuri video</option>
+                <option value="16">Jocuri de societate</option>
+                <option value="17">Stiinta si natura</option>
+                <option value="18">Stiinta: Calculatoare</option>
+                <option value="19">Stiinta: Matematica</option>
+                <option value="20">Mitologie</option>
+                <option value="21">Sport</option>
+                <option value="22">Geografie</option>
+                <option value="23">Istorie</option>
+                <option value="24">Politica</option>
+                <option value="25">Arta</option>
+                <option value="26">Celebritati</option>
+                <option value="27">Animale</option>
+                <option value="28">Vehicule</option>
+
+            </select>
+            <button onclick="startQuiz()" type="submit">Start Quiz</button>
+        </form>
+    </div>
+
+    <script src="category.js"></script>
+</body>
+</html>
